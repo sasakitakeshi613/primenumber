@@ -13,8 +13,8 @@ document.getElementById("check").onclick = function() {
 	
 	//値の範囲を設定
 	if(num.value > 10000000 || num.value < 0 || isNaN(num.value) || num.value==''){
-	alert("入力した値が範囲外か認識できない値です");
-	err = false;
+		alert("入力した値が範囲外か認識できない値です");
+		err = false;
 	} else {
 		//入力された値が素数かどうかを判定、ついでにどの数が約数になっているか上の配列に抽出
 		for(let i=2; i<num.value; i++){
